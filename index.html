@@ -10,25 +10,21 @@
     <link rel="manifest" href="./img/site.webmanifest">
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>artel</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     
-    <div class="header">
-       <div class="container">
-            <a href="#"><img src="./img/logo.png" alt="artel-logo" width="78" height="20"></a>
-       </div>
-    </div>
     <header class="header">
 
         <nav class="header__navbar navbar">
             <a class="navbar__logo" href="#"><img src="./img/logo.png" alt="artel-logo" width="78" height="20"></a>
             <ul class="navbar__menu">
-                <li><a href="#">Log out</a></li>
-                <li><a href="#">Ma'lumot qo'shish</a></li>
-                <li><a href="#">korzinka</a></li>
+                <li class="navbar__menu--item"><a class="navbar__menu--link" href="#">Add product <span class="fas fa-plus navbar__menu--icon"></span></a></li>
+                <li class="navbar__menu--item"><a class="navbar__menu--link" href="#">All products <span class="fas fa-cart-plus navbar__menu--icon"></span></a></li>
+                <li class="navbar__menu--item navbar__menu--btn"><a class="navbar__menu--link " href="#">Log out <span class="fas fa-sign-out-alt navbar__menu--icon"></span></a></li>
             </ul>
         </nav>
 
