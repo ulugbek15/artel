@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="./img/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>artel</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    
+    <header class="header">
+        <nav class="header__navbar navbar">
+            <a class="navbar__logo" href="./index.html"><img src="./img/logo.png" alt="artel-logo" width="78" height="20"></a>
+            <ul class="navbar__menu">
+                <li class="navbar__menu--item"><a class="navbar__menu--link" href="#">Add product <span class="fas fa-plus navbar__menu--icon"></span></a></li>
+                <li class="navbar__menu--item"><a class="navbar__menu--link" href="#">All products <span class="fas fa-cart-plus navbar__menu--icon"></span></a></li>
+                <li class="navbar__menu--item navbar__menu--btn"><a class="navbar__menu--link " href="#">Log out <span class="fas fa-sign-out-alt navbar__menu--icon"></span></a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    
+    <main class="main">
+        
+        <section class="main__content">
+            <div class="container">
+                <div class="main__content--box">
+                    <h1 class="main__content--title">Add product</h1>
+                    
+                    <form class="form" action="http://echo.htmlacademy.ru" method="POST">
+                        <input required class="form__input" name="product_name" type="text" placeholder="Product name...">
+                        <input required class="form__input" name="product_price" type="text" placeholder="Product price...">
+                        <button class="form__button" type="submit">Add Product</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+</body>
+</html>
