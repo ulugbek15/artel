@@ -23,6 +23,7 @@
     }
 }
 .table__body--td{
+    
     @media only screen and (max-width: 400px){
         &:nth-child(1){
             display: none;
