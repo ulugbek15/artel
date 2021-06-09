@@ -1,6 +1,20 @@
 .container {
   width: 1200px;
+  padding: 0px 20px;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    padding: 10px;
+    width: 360px;
+  }
 }
 
 .header__navbar {
@@ -37,6 +51,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 400px) {
+  .navbar__menu {
+    display: none;
+  }
 }
 
 .navbar__menu--item {
@@ -81,6 +101,12 @@
   text-align: center;
 }
 
+@media only screen and (max-width: 400px) {
+  .main__content--title {
+    font-size: 25px;
+  }
+}
+
 .main__content--box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -110,26 +136,57 @@
 
 .main__content--input {
   font-size: 20px;
-  width: 700px;
+  width: 100%;
   padding: 5px;
 }
 
 .main__content--box {
-  height: 500px;
+  height: 680px;
   overflow: auto;
 }
 
 .main__content--icon {
   position: absolute;
-  right: 250px;
+  right: 0px;
   padding: 10px;
   cursor: pointer;
+}
+
+button {
+  padding: 4px 0px;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
 }
 
 .table {
   width: 100%;
   border: 1px solid #000;
   border-collapse: collapse;
+}
+
+@media only screen and (max-width: 700px) {
+  .table {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .table {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .table__header--tr:first-child {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .table__body--td:nth-child(1) {
+    display: none;
+  }
 }
 
 .table__header--th {
@@ -145,9 +202,15 @@
 .table-wrapper {
   margin: 0 auto;
   margin-top: 20px;
-  width: 900px;
+  width: 100%;
   height: 450px;
   overflow: auto;
+}
+
+@media only screen and (max-width: 400px) {
+  .table-wrapper {
+    max-height: 60vh;
+  }
 }
 
 .table__body--btn {
@@ -166,12 +229,15 @@
 }
 
 .table__body--count-wrapper {
+  background-color: red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 100%;
 }
 
 .count {
